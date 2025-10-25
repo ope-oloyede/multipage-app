@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Profile</a></li>
+          <li><a href="profile.html">About me</a></li>
+          <li><a href="contact.html" aria-current="page">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section data-testid="contact-form-section">
+        <h1>Contact Me</h1>
+        <form id="contactForm" novalidate data-testid="contact-form">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            data-testid="input-name"
+            required
+          />
+          <small class="error" data-testid="error-name"></small>
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            data-testid="input-email"
+            required
+          />
+          <small class="error" data-testid="error-email"></small>
+
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            data-testid="input-subject"
+            required
+          />
+          <small class="error" data-testid="error-subject"></small>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            data-testid="input-message"
+            required
+          ></textarea>
+          <small class="error" data-testid="error-message"></small>
+
+          <button type="submit" data-testid="submit-btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ope-Oloye</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
