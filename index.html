@@ -17,7 +17,7 @@
     <header>
       <nav data-testid="navbar">
         <ul>
-          <li><a href="index.html" data-testid="nav-about">Profile </a></li>
+          <li><a href="index.html" data-testid="nav-about">Profile</a></li>
           <li><a href="profile.html" data-testid="nav-profile">About me</a></li>
           <li><a href="contact.html" data-testid="nav-contact">Contact me</a></li>
         </ul>
@@ -26,9 +26,9 @@
 
     <main data-testid="about-section">
       <section>
-        <h1>Profile</h1>
-        <h1 class="name">Welcome to My World</h1>
-        <p>
+        <h1 data-testid="test-user-name">Profile</h1>
+        <h1 class="name" data-testid="test-user-heading">Welcome to My World</h1>
+        <p data-testid="test-user-bio">
           I’m Opeyemi, a Frontend Engineer passionate about crafting responsive,
           user-friendly, and accessible web interfaces. I specialise in
           transforming design concepts into seamless digital experiences using
@@ -36,54 +36,62 @@
           building scalable solutions that combine clean design with efficient
           performance — and I love turning ideas into reality.
         </p>
+
         <hr />
-        <section aria-labelledby="hobbies-title" data-testid="hobbies-section">
-          <h1 id="hobbies-title" class="hobbies-title">Hobbies</h1>
-          <ul class="hobbies-list" data-testid="hobbies-list">
+
+        <section
+          aria-labelledby="hobbies-title"
+          data-testid="test-user-hobbies-section"
+        >
+          <h1 id="hobbies-title" class="hobbies-title" data-testid="test-user-hobbies">
+            Hobbies
+          </h1>
+          <ul class="hobbies-list">
             <li>Play Games</li>
             <li>Listening to Music</li>
-            <li>Watching football</li>
+            <li>Watching Football</li>
             <li>Lifestyle</li>
           </ul>
         </section>
-        <div class="links">
+
+        <hr />
+
+        <div class="links" data-testid="test-user-links">
           <ul class="social-links" data-testid="social-links">
-              <li>
-                <a
-                  href="https://twitter.com/astoldbyope"
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="link-twitter"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/ope-oloyede"
-                  aria-label="GitHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="link-github"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="www.linkedin.com/in/opeyemi-oloyede-7471762ab"
-                  aria-label="Linkedin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="link-linkedin"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-        </div>
-         
+            <li>
+              <a
+                href="https://twitter.com/astoldbyope"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="link-twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/ope-oloyede"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="link-github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/opeyemi-oloyede-7471762ab"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="link-linkedin"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

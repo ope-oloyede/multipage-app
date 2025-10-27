@@ -19,9 +19,10 @@
 
     <main data-testid="profile-section">
       <section>
-        <h1 class="profile">About Me</h1>
+        <h1 class="profile" data-testid="test-user-name">About Me</h1>
+
         <h2 class="Bio">Short Bio</h2>
-        <p>
+        <p data-testid="test-user-bio">
           I didn’t study anything related to computer science at university. I
           actually studied Mass Communication but along the way, I developed a
           deep interest in technology and web development. That curiosity led me
@@ -29,9 +30,11 @@
           enjoy building responsive, accessible, and user-friendly web
           experiences with React, TypeScript, and SCSS.
         </p>
+
         <hr />
+
         <h2 class="goals">My HNG Goals</h2>
-        <p>
+        <p data-testid="test-user-time">
           Through the HNG Internship, I aim to sharpen my frontend development
           skills by working on real-world projects and collaborating with
           talented developers. I want to improve my problem-solving abilities,
@@ -40,7 +43,28 @@
           tech. My ultimate goal is to grow into a well-rounded engineer who can
           build scalable, high-quality web applications.
         </p>
+
         <hr />
+
+        <h2 class="hobbies">Hobbies</h2>
+        <ul data-testid="test-user-hobbies">
+          <li>Reading tech blogs</li>
+          <li>Coding</li>
+          <li>Watching football</li>
+          <li>Listening to music</li>
+        </ul>
+
+        <hr />
+
+        <h2 class="dislikes">Dislikes</h2>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Unclear documentation</li>
+          <li>Unnecessary meetings</li>
+        </ul>
+
+        <hr />
+
         <h2 class="note">Note To Self</h2>
         <p>
           You didn’t start with a tech background, but you chose to learn, grow,
